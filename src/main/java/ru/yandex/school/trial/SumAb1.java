@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class SumAb1 {
-    private final static String defaultPath = "C:\\Users\\Kit\\Documents\\projects\\Yandex_SummerSchool\\src\\main\\java\\ru\\yandex\\school\\trial\\";
+    private final static String defaultPath = "./";
     private final static File inputFile = new File(defaultPath + "input.txt");
 
     public static void main(String[] args) throws IOException {
@@ -16,8 +16,6 @@ public class SumAb1 {
             System.out.println("Файл \"" + inputFile.getPath() + "\" не найден");
             answerInConsole();
         }
-        BufferedReader reader = Files.newBufferedReader(Paths.get("file.txt"));
-
     }
 
     public static int sumAb (Scanner scanner){
